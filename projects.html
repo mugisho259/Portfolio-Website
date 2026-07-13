@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects — responsive cards, filters by category, and hover animations." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Projects</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+        <span class="brand-text">Mugisho</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html" data-page="home">Home</a>
+        <a class="nav-link" href="about.html" data-page="about">About</a>
+        <a class="nav-link" href="projects.html" data-page="projects">Projects</a>
+        <a class="nav-link" href="services.html" data-page="services">Services</a>
+        <a class="nav-link" href="certificates.html" data-page="certificates">Certificates</a>
+        <a class="nav-link" href="contact.html" data-page="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions" aria-label="Theme and utilities">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon" aria-hidden="true" data-icon="moon"></i>
+          <i class="fa-solid fa-sun" aria-hidden="true" data-icon="sun"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h1 id="projects-title">Projects</h1>
+        </div>
+
+        <div id="projects-grid" class="projects-grid" aria-live="polite">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-media" aria-hidden="true">
+              <img src="images/project-1.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h2>Umoja Student Course Registration System</h2>
+              <p>A fast, accessible landing page with responsive layout and subtle animations.</p>
+              <div class="tech"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">Bootstrap 5</span><span class="pill">PHP</span><span class="pill">MySQL</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary small" href="#" aria-label="Live demo for Umoja Student Course Registration System">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Umoja Student Course Registration System"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="security">
+            <div class="project-media" aria-hidden="true">
+              <img src="images/project-2.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h2>Threat Model Checklist</h2>
+              <p>A checklist-style tool for identifying risks and improving system security posture.</p>
+              <div class="tech"><span class="pill">OWASP</span><span class="pill">Hardening</span><span class="pill">Risk</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary small" href="#" aria-label="Live demo for Threat Model Checklist">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Threat Model Checklist"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="network">
+            <div class="project-media" aria-hidden="true">
+              <img src="images/project-3.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h2>Network Troubleshooter</h2>
+              <p>Guided steps for diagnosing common connectivity problems and recommending fixes.</p>
+              <div class="tech"><span class="pill">TCP/IP</span><span class="pill">DNS</span><span class="pill">Diagnostics</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary small" href="#" aria-label="Live demo for Network Troubleshooter">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Network Troubleshooter"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="uiux">
+            <div class="project-media" aria-hidden="true">
+              <img src="images/project-4.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h2>UI/UX Component Library</h2>
+              <p>Reusable accessible UI patterns with clean spacing, focus states, and consistent typography.</p>
+              <div class="tech"><span class="pill">Design Systems</span><span class="pill">Accessibility</span><span class="pill">CSS</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary small" href="#" aria-label="Live demo for UI/UX Component Library">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for UI/UX Component Library"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-media" aria-hidden="true">
+              <img src="images/project-5.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h2>Portfolio SPA Prototype</h2>
+              <p>Modern single-page interactions with smooth scrolling and performance-minded code structure.</p>
+              <div class="tech"><span class="pill">Performance</span><span class="pill">Animations</span><span class="pill">JS</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary small" href="#" aria-label="Live demo for Portfolio SPA Prototype">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Portfolio SPA Prototype"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="security">
+            <div class="project-media" aria-hidden="true">
+              <img src="images/project-6.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h2>Security Awareness Poster Generator</h2>
+              <p>Template-based content creator for awareness campaigns with clear, accessible messaging.</p>
+              <div class="tech"><span class="pill">Templates</span><span class="pill">Security Tips</span><span class="pill">WCAG</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary small" href="#" aria-label="Live demo for Security Awareness Poster Generator">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Security Awareness Poster Generator"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Built by Mugisho Munganga</p>
+        
+      </div>
+
+      <div>
+        <p class="footer-title">Quick Navigation</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="services.html">Services</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-title">Let's Connect</p>
+        <div class="social-row">
+          <a class="social-link" href="https://www.linkedin.com/in/mugisho-munganga-7a2748298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-link" href="https://github.com/mugisho259" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a class="social-link" href="mailto:mugishomunganga1@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+          <a class="social-link" href="https://wa.me/256772211512" aria-label="WhatsApp DM" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+
+        </div>
+    </div>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+

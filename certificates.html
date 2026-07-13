@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Certificates — searchable gallery with view and download actions." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Certificates</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+        <span class="brand-text">Mugisho</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html" data-page="home">Home</a>
+        <a class="nav-link" href="about.html" data-page="about">About</a>
+        <a class="nav-link" href="projects.html" data-page="projects">Projects</a>
+        <a class="nav-link" href="services.html" data-page="services">Services</a>
+        <a class="nav-link" href="certificates.html" data-page="certificates">Certificates</a>
+        <a class="nav-link" href="contact.html" data-page="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions" aria-label="Theme and utilities">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon" aria-hidden="true" data-icon="moon"></i>
+          <i class="fa-solid fa-sun" aria-hidden="true" data-icon="sun"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="cert-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h1 id="cert-title">Certificates</h1>
+          <p>Search and filter certificates.</p>
+        </div>
+
+        <div class="filters card reveal" role="region" aria-label="Certificate search and filters">
+          <div class="filters-row filters-search">
+
+            <label class="sr-only" for="cert-search">Search certificates</label>
+            <div class="search-wrap">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input id="cert-search" type="search" placeholder="Search certificates..." autocomplete="off" />
+            </div>
+
+            <div class="filters-row" style="margin-top:0">
+              <button class="filter-btn is-active" type="button" data-cert-filter="all">All</button>
+              <button class="filter-btn" type="button" data-cert-filter="cyber">Cybersecurity</button>
+              <button class="filter-btn" type="button" data-cert-filter="network">Networking</button>
+              <button class="filter-btn" type="button" data-cert-filter="IoT">IoT</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="cert-grid" class="cert-grid" aria-live="polite">
+          <article class="cert-card reveal" data-category="cyber">
+            <img src="images/ICDL.png" alt="Certificate: ICDL Certificate" loading="lazy" />
+            <h2>ICDL Profile Certificate</h2>
+            <div class="small muted"></div>
+            <div class="cert-actions">
+              <a class="btn btn-primary small" href="certificates/ICDL Profile Certificate - MUGISHO  MUNGANGA.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/ICDL Profile Certificate - MUGISHO  MUNGANGA.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" data-category="cybersecurity">
+            <img src="images/coursera.png" alt="Certificate: Introduction to CyberSecurity" loading="lazy" />
+            <h2>Microsoft Office 365</h2>
+            <div class="cert-actions">
+              <a class="btn btn-primary small" href="certificates/Coursera A3AX1NKPSGV9.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/Coursera A3AX1NKPSGV9.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" data-category="IoT">
+            <img src="images/IoT.png" alt="Certificate: IoT" loading="lazy" />
+            <h2>Introduction to IoT and Digital Transformation</h2>
+            <div class="cert-actions">
+              <a class="btn btn-primary small" href="certificates/IOT Certificate.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/IOT Certificate.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" data-category="cyber">
+            <img src="images/cybersecurity.png" alt="Certificate: Introduction to CyberSecurity" loading="lazy" />
+            <h2>Introduction to Cybersecurity</h2>
+           
+            <div class="cert-actions">
+              <a class="btn btn-primary small" href="certificates/Introduction to CyberSecurity.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/Introduction to CyberSecurity.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" data-category="cyber">
+            <img src="images/Screenshot (1).png" alt="Certificate: Introduction to Data Science" loading="lazy" />
+            <h2>Introduction to Data Science</h2>
+            <div class="cert-actions">
+              <a class="btn btn-primary small" href="certificates/Introduction to Data Science Certificate.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/Introduction to Data Science Certificate.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal" data-category="network">
+            <img src="certificates/cert-6.jpg" alt="Certificate: System and Network Administration" loading="lazy" />
+            <h2>System and Network Administration</h2>
+            <div class="small muted">Networking</div>
+            <div class="cert-actions">
+              <a class="btn btn-primary small" href="certificates/cert-6.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/cert-6.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+            </div>
+          </article>
+          <article class="cert-card reveal" data-category="network">
+            <img src="images/using computer.png" alt="Certificate: Using Computer and Mobile Devices" loading="lazy" />
+            <h2>Using Computer and Mobile Devices</h2>
+            
+            <div class="cert-actions">
+              <a class="btn btn-primary small" href="certificates/Using Computer and Mobile Devices.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/Using Computer and Mobile Devices.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Built by Mugisho Munganga</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Quick Navigation</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="services.html">Services</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-title">Let's Connect</p>
+        <div class="social-row">
+          <a class="social-link" href="https://www.linkedin.com/in/mugisho-munganga-7a2748298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-link" href="https://github.com/mugisho259" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a class="social-link" href="mailto:mugishomunganga1@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+          <a class="social-link" href="https://wa.me/256772211512" aria-label="WhatsApp DM" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+
+        </div>
+    </div>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
