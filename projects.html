@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Projects — responsive cards, filters by category, and hover animations." />
-  <meta name="theme-color" content="#0b1220" />
+  <meta name="theme-color" content="#0a1628" />
   <title>Projects</title>
+  <link rel="icon" type="image/jpeg" href="images/romy.jpg" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
@@ -17,7 +18,7 @@
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Go to homepage">
         <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
-        <span class="brand-text">Mugisho</span>
+        <span class="brand-text">Mugisho Munganga</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
@@ -34,7 +35,7 @@
       </nav>
 
       <div class="header-actions" aria-label="Theme and utilities">
-        <button class="theme-toggle" type="button" aria-label="Toggle dark/light mode">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark/cyber mode">
           <i class="fa-solid fa-moon" aria-hidden="true" data-icon="moon"></i>
           <i class="fa-solid fa-sun" aria-hidden="true" data-icon="sun"></i>
         </button>
@@ -52,90 +53,60 @@
         <div id="projects-grid" class="projects-grid" aria-live="polite">
           <article class="project-card reveal" data-category="web">
             <div class="project-media" aria-hidden="true">
-              <img src="images/project-1.jpg" alt="" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop" alt="Student Course Registration System" loading="lazy" />
             </div>
             <div class="project-body">
               <h2>Umoja Student Course Registration System</h2>
               <p>A fast, accessible landing page with responsive layout and subtle animations.</p>
               <div class="tech"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">Bootstrap 5</span><span class="pill">PHP</span><span class="pill">MySQL</span></div>
               <div class="project-actions">
-                <a class="btn btn-primary small" href="#" aria-label="Live demo for Umoja Student Course Registration System">Live Demo</a>
+                <a class="btn btn-primary small" href="https://umoja.liveblog365.com" target="_blank" aria-label="Live demo for Umoja Student Course Registration System">Live Demo</a>
                 <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Umoja Student Course Registration System"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="security">
-            <div class="project-media" aria-hidden="true">
-              <img src="images/project-2.jpg" alt="" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <h2>Threat Model Checklist</h2>
-              <p>A checklist-style tool for identifying risks and improving system security posture.</p>
-              <div class="tech"><span class="pill">OWASP</span><span class="pill">Hardening</span><span class="pill">Risk</span></div>
-              <div class="project-actions">
-                <a class="btn btn-primary small" href="#" aria-label="Live demo for Threat Model Checklist">Live Demo</a>
-                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Threat Model Checklist"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="network">
-            <div class="project-media" aria-hidden="true">
-              <img src="images/project-3.jpg" alt="" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <h2>Network Troubleshooter</h2>
-              <p>Guided steps for diagnosing common connectivity problems and recommending fixes.</p>
-              <div class="tech"><span class="pill">TCP/IP</span><span class="pill">DNS</span><span class="pill">Diagnostics</span></div>
-              <div class="project-actions">
-                <a class="btn btn-primary small" href="#" aria-label="Live demo for Network Troubleshooter">Live Demo</a>
-                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Network Troubleshooter"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="uiux">
-            <div class="project-media" aria-hidden="true">
-              <img src="images/project-4.jpg" alt="" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <h2>UI/UX Component Library</h2>
-              <p>Reusable accessible UI patterns with clean spacing, focus states, and consistent typography.</p>
-              <div class="tech"><span class="pill">Design Systems</span><span class="pill">Accessibility</span><span class="pill">CSS</span></div>
-              <div class="project-actions">
-                <a class="btn btn-primary small" href="#" aria-label="Live demo for UI/UX Component Library">Live Demo</a>
-                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for UI/UX Component Library"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="web">
             <div class="project-media" aria-hidden="true">
-              <img src="images/project-5.jpg" alt="" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&h=400&fit=crop" alt="Personal Portfolio" loading="lazy" />
             </div>
             <div class="project-body">
-              <h2>Portfolio SPA Prototype</h2>
-              <p>Modern single-page interactions with smooth scrolling and performance-minded code structure.</p>
-              <div class="tech"><span class="pill">Performance</span><span class="pill">Animations</span><span class="pill">JS</span></div>
+              <h2>Personal Portfolio</h2>
+              <p>A personal portfolio website showcasing projects and skills, built with clean and responsive design.</p>
+              <div class="tech"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span></div>
               <div class="project-actions">
-                <a class="btn btn-primary small" href="#" aria-label="Live demo for Portfolio SPA Prototype">Live Demo</a>
-                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Portfolio SPA Prototype"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                <a class="btn btn-primary small" href="https://mugishomunganga.vercel.app" aria-label="Live demo for Personal Portfolio">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" onclick="showComingSoon('Github code coming soon'); return false;" aria-label="GitHub repo for Personal Portfolio"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card reveal" data-category="security">
+          <article class="project-card reveal" data-category="web">
             <div class="project-media" aria-hidden="true">
-              <img src="images/project-6.jpg" alt="" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop" alt="FindBridge Community Platform" loading="lazy" />
             </div>
             <div class="project-body">
-              <h2>Security Awareness Poster Generator</h2>
-              <p>Template-based content creator for awareness campaigns with clear, accessible messaging.</p>
-              <div class="tech"><span class="pill">Templates</span><span class="pill">Security Tips</span><span class="pill">WCAG</span></div>
+              <h2>FindBridge</h2>
+              <p>A platform connecting people with services and resources in their local community.</p>
+              <div class="tech"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">PHP</span><span class="pill">MySQL</span></div>
               <div class="project-actions">
-                <a class="btn btn-primary small" href="#" aria-label="Live demo for Security Awareness Poster Generator">Live Demo</a>
-                <a class="btn btn-ghost small" href="#" aria-label="GitHub repo for Security Awareness Poster Generator"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                <a class="btn btn-primary small" href="#" onclick="showComingSoon('Live demo coming soon'); return false;" aria-label="Live demo for FindBridge">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" onclick="showComingSoon('Github code coming soon'); return false;" aria-label="GitHub repo for FindBridge"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-media" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="Daraja la Afya Health Platform" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h2>Daraja la Afya</h2>
+              <p>A health services platform providing access to medical resources and information.</p>
+              <div class="tech"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">PHP</span><span class="pill">MySQL</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary small" href="#" onclick="showComingSoon('Live demo coming soon'); return false;" aria-label="Live demo for Daraja la Afya">Live Demo</a>
+                <a class="btn btn-ghost small" href="#" onclick="showComingSoon('Github code coming soon'); return false;" aria-label="GitHub repo for Daraja la Afya"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
               </div>
             </div>
           </article>
@@ -143,36 +114,68 @@
 
       </div>
     </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Let's Build Something Great Together</h2>
+        <p>Whether it's a new build or improving what you already have, let's talk.</p>
+        <a class="btn-cta" href="contact.html">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          Get in Touch
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand">Built by Mugisho Munganga</p>
-        
-      </div>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Mugisho <span class="accent">Munganga</span>.</p>
+          <p class="footer-tagline">Network engineer & cybersecurity specialist based in Uganda. Building secure infrastructures and modern web solutions, one project at a time.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/mugisho-munganga-7a2748298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/mugisho259" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="mailto:mugishomunganga1@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://wa.me/256772211512" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
 
-      <div>
-        <p class="footer-title">Quick Navigation</p>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="services.html">Services</a>
-          <a href="certificates.html">Certificates</a>
-          <a href="contact.html">Contact</a>
+        <div>
+          <p class="footer-title">Quick Links</p>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> About</a>
+            <a href="projects.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Projects</a>
+            <a href="services.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Services</a>
+            <a href="certificates.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Certificates</a>
+            <a href="contact.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-title">Contact</p>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Nkozi / Mbarara, South Western Uganda</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:mugishomunganga1@gmail.com">mugishomunganga1@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+256772211512">+256 772 211 512</a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div>
-        <p class="footer-title">Let's Connect</p>
-        <div class="social-row">
-          <a class="social-link" href="https://www.linkedin.com/in/mugisho-munganga-7a2748298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-          <a class="social-link" href="https://github.com/mugisho259" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-          <a class="social-link" href="mailto:mugishomunganga1@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
-          <a class="social-link" href="https://wa.me/256772211512" aria-label="WhatsApp DM" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-
-        </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Mugisho Munganga. All rights reserved.</p>
+      <p>BSc in Information Technology &middot; Uganda Martyrs University</p>
     </div>
 
     <button class="back-to-top" type="button" aria-label="Back to top">
@@ -180,7 +183,6 @@
     </button>
   </footer>
 
-  <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

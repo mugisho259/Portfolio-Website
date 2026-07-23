@@ -4,11 +4,11 @@ Responsive personal portfolio built with HTML5, CSS3, Bootstrap5, and JavaScript
 
 Welcome to my personal portfolio website repository.
 
-This website showcases my projects, technical skills, certifications, services, and professional journey as an Information Technology student specializing in Networking, Cybersecurity, and Web Development.
+This website showcases my projects, technical skills, certifications, services, and professional journey as an Information Technology student specializing in Networking & Cybersecurity, and Web Development.
 
 ##  Live Website
 
-Coming Soon (Will be deployed on Vercel)
+https://mugishomunganga.vercel.app
 
 ##  About the Website
 

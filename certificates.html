@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Certificates — searchable gallery with view and download actions." />
-  <meta name="theme-color" content="#0b1220" />
+  <meta name="theme-color" content="#0a1628" />
   <title>Certificates</title>
+  <link rel="icon" type="image/jpeg" href="images/romy.jpg" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
@@ -17,7 +18,7 @@
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Go to homepage">
         <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
-        <span class="brand-text">Mugisho</span>
+        <span class="brand-text">Mugisho Munganga</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
@@ -34,7 +35,7 @@
       </nav>
 
       <div class="header-actions" aria-label="Theme and utilities">
-        <button class="theme-toggle" type="button" aria-label="Toggle dark/light mode">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark/cyber mode">
           <i class="fa-solid fa-moon" aria-hidden="true" data-icon="moon"></i>
           <i class="fa-solid fa-sun" aria-hidden="true" data-icon="sun"></i>
         </button>
@@ -47,7 +48,7 @@
       <div class="container">
         <div class="section-head reveal">
           <h1 id="cert-title">Certificates</h1>
-          <p>Search and filter certificates.</p>
+          
         </div>
 
         <div class="filters card reveal" role="region" aria-label="Certificate search and filters">
@@ -117,12 +118,12 @@
           </article>
 
           <article class="cert-card reveal" data-category="network">
-            <img src="certificates/cert-6.jpg" alt="Certificate: System and Network Administration" loading="lazy" />
-            <h2>System and Network Administration</h2>
-            <div class="small muted">Networking</div>
+            <img src="images/certificate.png" alt="Introduction to Networks" loading="lazy" />
+            <h2>Introduction to Networks</h2>
+            
             <div class="cert-actions">
-              <a class="btn btn-primary small" href="certificates/cert-6.pdf" target="_blank" rel="noopener">View</a>
-              <a class="btn btn-ghost small" href="certificates/cert-6.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
+              <a class="btn btn-primary small" href="certificates/Introduction to networks.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-ghost small" href="certificates/Introduction to networks.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download PDF</a>
             </div>
           </article>
           <article class="cert-card reveal" data-category="network">
@@ -140,32 +141,54 @@
   </main>
 
   <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand">Built by Mugisho Munganga</p>
-      </div>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Mugisho <span class="accent">Munganga</span>.</p>
+          <p class="footer-tagline">Network engineer & cybersecurity specialist based in Uganda. Building secure infrastructures and modern web solutions, one project at a time.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/mugisho-munganga-7a2748298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/mugisho259" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="mailto:mugishomunganga1@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://wa.me/256772211512" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
 
-      <div>
-        <p class="footer-title">Quick Navigation</p>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="services.html">Services</a>
-          <a href="certificates.html">Certificates</a>
-          <a href="contact.html">Contact</a>
+        <div>
+          <p class="footer-title">Quick Links</p>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> About</a>
+            <a href="projects.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Projects</a>
+            <a href="services.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Services</a>
+            <a href="certificates.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Certificates</a>
+            <a href="contact.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-title">Contact</p>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Nkozi / Mbarara, South Western Uganda</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:mugishomunganga1@gmail.com">mugishomunganga1@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+256772211512">+256 772 211 512</a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div>
-        <p class="footer-title">Let's Connect</p>
-        <div class="social-row">
-          <a class="social-link" href="https://www.linkedin.com/in/mugisho-munganga-7a2748298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-          <a class="social-link" href="https://github.com/mugisho259" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-          <a class="social-link" href="mailto:mugishomunganga1@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
-          <a class="social-link" href="https://wa.me/256772211512" aria-label="WhatsApp DM" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-
-        </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Mugisho Munganga. All rights reserved.</p>
+      <p>BSc in Information Technology &middot; Uganda Martyrs University</p>
     </div>
 
     <button class="back-to-top" type="button" aria-label="Back to top">
@@ -173,7 +196,6 @@
     </button>
   </footer>
 
-  <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

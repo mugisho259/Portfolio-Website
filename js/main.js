@@ -3,11 +3,23 @@
 */
 
 (function(){
+  // Custom alert for "coming soon" messages
+  window.showComingSoon = function(msg) {
+    let existing = document.querySelector('.coming-soon-alert');
+    if (existing) existing.remove();
+    const el = document.createElement('div');
+    el.className = 'coming-soon-alert';
+    el.textContent = msg;
+    document.body.appendChild(el);
+    setTimeout(() => el.classList.add('show'), 10);
+    setTimeout(() => { el.classList.remove('show'); setTimeout(() => el.remove(), 300); }, 2500);
+  };
+
   const root = document.documentElement;
   const themeBtn = document.querySelector('.theme-toggle');
 
   function applyTheme(theme){
-    if(theme === 'light') root.setAttribute('data-theme','light');
+    if(theme === 'cyber') root.setAttribute('data-theme','cyber');
     else root.removeAttribute('data-theme');
   }
 
@@ -15,12 +27,11 @@
   const saved = localStorage.getItem('theme');
   if(saved){ applyTheme(saved); }
   else {
-    const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-    applyTheme(prefersLight ? 'light' : 'dark');
+    applyTheme('dark');
   }
 
   themeBtn?.addEventListener('click', () => {
-    const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    const next = root.getAttribute('data-theme') === 'cyber' ? 'dark' : 'cyber';
     localStorage.setItem('theme', next);
     applyTheme(next);
   });
@@ -130,7 +141,7 @@
 
   // Typing effect (Home hero)
   const typingRoot = document.querySelector('.typing-text');
-  const titles = ['Cybersecurity', 'Networking','IT Support', 'Web Development', 'UI/UX Design', 'System Administration'];
+  const titles = ['Network Engineering & Cybersecurity and Full-Stack Web Development, building secure, scalable network infrastructures and modern web applications that help businesses and organizations thrive.'];
   let tIndex = 0;
   let charIndex = 0;
   let deleting = false;
